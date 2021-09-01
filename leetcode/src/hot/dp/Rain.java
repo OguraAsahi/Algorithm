@@ -1,6 +1,17 @@
 package hot.dp;
 
+/**
+ * 接雨水
+ *
+ * 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+ */
 public class Rain {
+
+    /**
+     * 动态规划法。
+     *
+     * 对于下标 i，水能达到的最大高度等于下标 i 左右两侧的最大高度的最小值，再减去 height[i] 就能得到当前柱子所能存的水量。
+     */
     public int trap(int[] height){
         int n;
         if ((n = height.length) < 3){
