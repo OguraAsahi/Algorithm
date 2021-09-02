@@ -19,5 +19,23 @@ public class KSubstring {
      * 如果当前字符不包含在子字符串，则将该字符添加进子字符串。反之，如果子串包含该字符，左边指针依次向右移动，直至子串不包含该字符，再移动右边指针。
      */
 
+    public int kSubstring(String s, int k){
+        String sub = "";
+        int maxLen = 0;
+        for (int i = 0; i < s.length(); i++) {
+            while(sub.contains(Character.toString(s.charAt(i)))) {
+                sub = sub.substring(1);
+            }
+            sub += Character.toString(s.charAt(i));
+            if(sub.length() <= k)
+                maxLen = Math.max(maxLen, sub.length());
+        }
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        int ret = new KSubstring().kSubstring("abccdefd", 5);
+        System.out.println(ret);
+    }
 
 }
