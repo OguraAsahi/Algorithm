@@ -1,5 +1,10 @@
 package offer;
 
+/**
+ * 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
+ * 所有节点的值都是唯一的。
+ * p、q 为不同节点且均存在于给定的二叉搜索树中。
+ */
 public class Solution68_1 {
     static class TreeNode{
         int val;
@@ -10,6 +15,9 @@ public class Solution68_1 {
         }
     }
 
+    /**
+     * 从上到下搜索，找到第一个值位于 [p, q] 之间的结点即可。既可以用迭代实现，也可以用递归实现。
+     */
     public TreeNode lowestCommonAncestor(TreeNode root ,TreeNode p, TreeNode q){
         if (root == null){
             return null;
