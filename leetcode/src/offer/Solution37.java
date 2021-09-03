@@ -3,6 +3,9 @@ package offer;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 请实现两个函数，分别用来序列化和反序列化二叉树。
+ */
 public class Solution37 {
     static class TreeNode{
         int val;

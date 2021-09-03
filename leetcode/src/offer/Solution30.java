@@ -3,6 +3,9 @@ package offer;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * 定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)
+ */
 public class Solution30 {
     // Java堆栈Stack类已经过时，Java官方推荐使用Deque替代Stack使用。Deque堆栈操作方法：push()、pop()、peek()。
     // s1记录完整的栈

@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
+/**
+ * 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。
+ */
 public class Solution32 {
     static class TreeNode{
         int val;
