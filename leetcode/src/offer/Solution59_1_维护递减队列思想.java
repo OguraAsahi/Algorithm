@@ -2,6 +2,9 @@ package offer;
 
 import java.util.LinkedList;
 
+/**
+ * 给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。
+ */
 public class Solution59_1_维护递减队列思想 {
     public int[] maxSlidingWindow(int[] nums, int k){
         int index = 0, n = nums.length;

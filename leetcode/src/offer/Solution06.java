@@ -6,12 +6,12 @@ import java.util.Stack;
  * 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
  */
 
-/**
- * 利用堆栈从头到尾将链表的值push进去
- * 然后从依次将堆栈pop出来
- */
 public class Solution06 {
 
+    /**
+     * 利用堆栈从头到尾将链表的值push进去
+     * 然后从依次将堆栈pop出来
+     */
     class ListNode{
         int val;
         ListNode next = null;

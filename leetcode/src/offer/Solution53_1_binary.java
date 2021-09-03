@@ -1,5 +1,8 @@
 package offer;
 
+/**
+ * 统计一个数字在排序数组中出现的次数。
+ */
 public class Solution53_1_binary {
     public int search(int[] nums, int target){
         if (nums.length == 0){
