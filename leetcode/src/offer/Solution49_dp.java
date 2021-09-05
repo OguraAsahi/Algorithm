@@ -1,5 +1,8 @@
 package offer;
 
+/**
+ * 我们把只包含因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。
+ */
 public class Solution49_dp {
     public int nthUglyNumber(int n){
         int[] dp = new int[n];

@@ -3,6 +3,9 @@ package offer;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。
+ */
 public class Solution50 {
     public char findUniqueChar(String s){
         if ("".equals(s)){

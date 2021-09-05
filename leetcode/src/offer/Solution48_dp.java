@@ -3,6 +3,9 @@ package offer;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
+ */
 public class Solution48_dp {
     public int lengthOfLongestSubstring(String s){
         if (s == null || "".equals(s)){
