@@ -1,5 +1,8 @@
 package hot.string;
 
+/**
+ * 最长公共前缀
+ */
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs){
         int n;

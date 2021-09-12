@@ -1,39 +1,24 @@
 package scanner.xiaomi;
 
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * 最长公共子序列
+ */
 public class Main2 {
     public int solution(String str1, String str2){
-        HashMap<Integer, Integer> map = new HashMap<>();
         int m = str1.length(), n = str2.length();
-        int[] dp = new int[Math.min(m, n) + 1];
-        int maxLen = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (str1.charAt(i) == str2.charAt(j)){
-                    map.put(i, j);
-                    int flag = i;
-                    while (flag > 0){
-                        if (!map.containsKey(flag)){
-                            flag--;
-                            continue;
-                        }
-                        if (map.get(flag) < j){
-                            dp[i + 1] = dp[flag] + 1;
-                            break;
-                        }
-                        flag--;
-                    }
-                    break;
+        int[][] dp = new int[m + 1][n + 1];
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (str1.charAt(i - 1) == str2.charAt(j - 1)){
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
             }
         }
-        for (int i = 0; i < dp.length; i++) {
-            maxLen = Math.max(maxLen, dp[i]);
-        }
-        return maxLen;
+        return dp[m][n];
     }
 
 
