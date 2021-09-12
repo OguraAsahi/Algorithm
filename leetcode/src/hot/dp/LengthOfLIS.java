@@ -2,6 +2,9 @@ package hot.dp;
 
 import java.util.Arrays;
 
+/**
+ * 最长上升子序列
+ */
 public class LengthOfLIS {
     private int lengthOfLIS(int[] nums){
         int n;

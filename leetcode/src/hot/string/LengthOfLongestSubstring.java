@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 最长不重复子串长度
+ */
 public class LengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0){

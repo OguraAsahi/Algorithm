@@ -1,5 +1,8 @@
 package hot.dp;
 
+/**
+ * 最大子串和
+ */
 public class MaxSubArray {
     public int maxSubArray(int[] nums){
         int n;
