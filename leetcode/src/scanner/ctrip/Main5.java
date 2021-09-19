@@ -1,4 +1,4 @@
-package scanner;
+package scanner.ctrip;
 
 import java.util.Scanner;
 

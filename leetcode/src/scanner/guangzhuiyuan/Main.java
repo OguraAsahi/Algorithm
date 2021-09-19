@@ -1,8 +1,8 @@
-package scanner.jingdong;
+package scanner.guangzhuiyuan;
 
 import java.util.Scanner;
 
-public class Main4 {
+public class Main {
 
 
     public static void main(String[] args){
